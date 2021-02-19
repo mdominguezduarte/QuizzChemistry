@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionChemistry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/thisQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="22sp"
+            android:text="What is the correct?">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/idImagen"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/chemistry2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="8"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal" />
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="13dp"
+                android:gravity="center"
+                android:textColorHint="@color/design_default_color_secondary_variant"
+                android:textSize="12sp"
+                android:text="0/10">
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/optOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/greyDark"
+            android:textSize="15sp"
+            tools:text="answer one">
+        </TextView>
+        <TextView
+            android:id="@+id/optTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/greyDark"
+            android:textSize="15sp"
+            tools:text="answer two">
+        </TextView>
+        <TextView
+            android:id="@+id/optThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/greyDark"
+            android:textSize="15sp"
+            tools:text="answer three">
+        </TextView>
+        <TextView
+            android:id="@+id/optFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_border"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="@color/greyDark"
+            android:textSize="15sp"
+            tools:text="answer four">
+        </TextView>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_init"
+            android:text="Validar"/>
+
+
+    </LinearLayout>
+    </ScrollView>
